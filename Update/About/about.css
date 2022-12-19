@@ -1,0 +1,187 @@
+     body {
+         margin: 0;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background-color: #000;
+     }
+     
+     .main {
+         height: 200px;
+         width: 100%;
+         background-color: black;
+     }
+     
+     a {
+         text-decoration: none;
+     }
+     
+     ul,
+     li {
+         display: block;
+         padding: 0;
+         margin: 0;
+     }
+     
+     .header-container {
+         width: 1170px;
+         margin: 0 auto;
+     }
+     
+     .header {
+         padding-top: 57px;
+         color: rgb(255, 0, 0);
+         padding-bottom: 322px
+     }
+     
+     header a {
+         color: rgb(255, 0, 0);
+     }
+     
+     .logo {
+         margin-right: 69px;
+         height: 40px;
+         background-color: white;
+     }
+     
+     .menu {
+         display: flex;
+     }
+     
+     .menu li a {
+         text-transform: uppercase;
+         font-size: 1em;
+         letter-spacing: 0.1em;
+     }
+     
+     .menu li a:hover {
+         border-bottom: 1px solid #fff;
+     }
+     
+     .menu li {
+         margin-right: 30px;
+     }
+     
+     .log {
+         font-size: 17px;
+         margin-left: auto;
+         letter-spacing: 0.1em;
+     }
+     
+     .nav {
+         display: flex;
+         align-items: center;
+     }
+     
+     p {
+         position: relative;
+         font-family: sans-serif;
+         text-transform: uppercase;
+         font-size: 2em;
+         letter-spacing: 4px;
+         overflow: hidden;
+         background: linear-gradient(90deg, #000, #fff, #000);
+         background-repeat: no-repeat;
+         background-size: 80%;
+         animation: animate 3s linear infinite;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: rgba(255, 255, 255, 0);
+     }
+     
+     @keyframes animate {
+         0% {
+             background-position: -500%;
+         }
+         100% {
+             background-position: 500%;
+         }
+     }
+     
+     .menu-open {
+         background: none;
+         border: none;
+         margin-left: 20px;
+         display: none
+     }
+     
+     .header .show-menu {
+         display: block;
+         position: absolute;
+         background: rgba(0, 0, 0, 0.4);
+         left: 0;
+         top: 0;
+         width: 50%;
+         padding: 40px 20px 20px 40px;
+     }
+     
+     .header .show-menu li {
+         margin-bottom: 20px;
+     }
+     /*Footer Code*/
+     
+     @media screen and (max-width: 1200px) {
+         .header-container {
+             width: 1140px;
+         }
+     }
+     
+     @media screen and (max-width: 1199px) {
+         .header-container {
+             width: 960px;
+         }
+         .desc-left,
+         .desc-right {
+             width: 48%;
+         }
+     }
+     
+     @media screen and (max-width: 991px) {
+         .header-container {
+             width: 720px;
+         }
+     }
+     
+     @media screen and (max-width: 767px) {
+         .header-container {
+             width: 540px;
+         }
+         .logo {
+             display: none;
+         }
+         .menu {
+             display: none;
+         }
+         .menu-open {
+             display: block
+         }
+         .desc-left,
+         .desc-right {
+             width: 100%;
+         }
+         .desc-left {
+             margin-bottom: 40px;
+         }
+         .footer-text {
+             flex-wrap: wrap;
+         }
+         .footer-text {
+             margin-bottom: 20px;
+         }
+     }
+     
+     @media screen and (max-width: 575px) {
+         .header-container {
+             width: 100%;
+             padding: 0 15px;
+         }
+     }
+     
+     .logo {
+         margin-right: auto;
+     }
+     
+     .menu-open {
+         margin-left: auto;
+     }
