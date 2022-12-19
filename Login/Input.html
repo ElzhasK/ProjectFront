@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INPUTFORM</title>
+    <link rel="stylesheet" href="Input.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <div class="container">
+        <div class="block">
+          <section class="block_item block-item">
+            <h2 class="block-item_title">Already have account ?</h2>
+            <button class="block-item_btn signin-btn" onclick="cl()">
+              Log In
+            </button>
+          </section>
+          <section class="block_item block-item">
+            <h2 class="block-item_title">Don't have an account ?</h2>
+            <button class="block-item_btn signup-btn">Sign Up</button>
+          </section>
+        </div>
+
+        <div class="form-box">
+          <p class="vhod">You successfully Logged In.</p>
+          <form action="#" class="form form_signin" id="f22">
+            <h3 style="font-size: 30px; font-weight: 500; color: #333">
+              Login
+            </h3>
+            <p>
+              <input
+                type="text"
+                class="form_input"
+                id="em"
+                placeholder="Email"
+              />
+            </p>
+            <p>
+              <input
+                type="password"
+                class="form_input"
+                id="par"
+                placeholder="Пароль"
+              />
+            </p>
+            <p>
+              <button class="form_btn" onclick="opend(em.value, par.value)">
+                Log In
+              </button>
+            </p>
+            <p>
+              <a href="#" class="form_forgot">Forgot Password ?</a>
+            </p>
+          </form>
+
+          <p class="zareg">You successfully registered.</p>
+
+          <form action="#" class="form form_signup" id="f11">
+            <h3 style="font-size: 30px; font-weight: 500; color: #333">
+              Create Account
+            </h3>
+            <p>
+              <input
+                type="text"
+                class="form_input"
+                id="a2"
+                placeholder="Name"
+              />
+            </p>
+            <p>
+              <input
+                type="email"
+                class="form_input"
+                id="a1"
+                placeholder="Email"
+              />
+            </p>
+
+            <p>
+              <input
+                type="text"
+                class="form_input"
+                id="123"
+                placeholder="Username"
+              />
+            </p>
+
+            <p>
+              <input
+                type="password"
+                class="form_input"
+                id="f1"
+                placeholder="Password"
+              />
+            </p>
+            <p>
+              <input
+                type="password"
+                class="form_input"
+                id="f2"
+                placeholder="Confirm Password"
+              />
+            </p>
+            <p>
+              <input type="textarea" placeholder="Bio" class="form_input" />
+            </p>
+
+            <p>
+              <button
+                class="form_btn"
+                onclick="check(a1.value, f1.value, f2.value)"
+              >
+                Sign Up
+              </button>
+            </p>
+            <p>
+              <a href="#" class="form_forgot">Forgot Password ?</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="Input.js"></script>
+  </body>
+</html>
