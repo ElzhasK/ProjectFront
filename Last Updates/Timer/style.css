@@ -1,0 +1,91 @@
+:root {
+    --start: 0deg;
+    --end: 360deg;
+}
+
+div {
+    color: white
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 46, 126);
+}
+
+.timer {
+    display: flex;
+    margin-top: 60px;
+    width: 600px;
+    height: 60px;
+    font-size: 24px;
+    gap: 6px;
+}
+
+.timer .input-days,
+.input-hours,
+.input-minutes,
+.input-seconds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: 1px solid white;
+    color: white;
+}
+
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation: spin 60s infinite linear;
+}
+
+.stop-animation {
+    animation: none;
+}
+
+.child {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    top: -15px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(var(--start));
+    }
+    to {
+        transform: rotate(var(--end));
+    }
+}
+
+.btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+}
+
+.start-btn,
+.pause-btn,
+.stop-btn {
+    height: 100%;
+    background-color: aliceblue;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+}
